@@ -20,13 +20,43 @@
 			referrerpolicy="no-referrer"
 		/>
 		<link rel="stylesheet" href="assets/styles/app.css" />
+		<link rel="stylesheet" href="assets/styles/responsive.css" />
 		<link rel="shortcut icon" href="/assets/images/irp-icon.png" type="image/x-icon" />
 		<title>Iran RolePlay - FiveM</title>
 	</head>
 
 	<body>
 		<header>
-			<nav class="navbar shadow-lg">
+			<div class="side-menu">
+				<a href="#" class="icon mx-auto my-2"
+					><img src="https://iranroleplay.com/images/logo.png" alt="Irrp-Icon"
+				/></a>
+
+				<ul class="m-0 p-0">
+					<li class="nav-item">
+						<a class="nav-link" href="#">
+							<i class="fa-solid fa-circle-question"></i> چگونه بازی کنیم</a
+						>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#"> <i class="fa fa-receipt"></i> قوانین</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#"
+							><i class="fa-brands fa-discord"></i> دیسکورد</a
+						>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#"
+							><i class="fa-solid fa-clipboard-list"></i> انجمن</a
+						>
+					</li>
+				</ul>
+				<button class="btn btn-dark shadow" type="button">
+					<i class="fab fa-steam"></i> ورود به اپ
+				</button>
+			</div>
+			<nav class="navbar navbar-light shadow-lg">
 				<div class="container-fluid">
 					<div class="wrapper">
 						<a href="#" class="icon"
@@ -56,8 +86,13 @@
 							>
 						</li>
 					</ul>
-					<button class="btn btn-dark shadow" type="button">
+					<button class="btn btn-dark shadow m-2" type="button">
 						<i class="fab fa-steam"></i> ورود به اپ
+					</button>
+					<button class="btn btn-light menu-btn shadow">
+						<span class="line"></span>
+						<span class="line"></span>
+						<span class="line"></span>
 					</button>
 				</div>
 			</nav>

@@ -7,6 +7,8 @@ body {
 	direction: rtl;
 }
 
+/* navBar Styles */
+
 .navbar a {
 	color: #3f3f3fa1;
 	font-size: 16px;
@@ -19,7 +21,8 @@ body {
 	width: 90px;
 }
 
-.navbar .icon {
+.navbar .icon,
+.side-menu .icon {
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -35,7 +38,8 @@ body {
 	-o-border-radius: 12px;
 }
 
-.navbar .icon img {
+.navbar .icon img,
+.side-menu .icon img {
 	width: 65%;
 }
 
@@ -51,7 +55,7 @@ body {
 	position: relative;
 }
 
-.nav-item::after {
+.navbar .nav-item::after {
 	content: "";
 	width: 0;
 	height: 3px;
@@ -63,18 +67,106 @@ body {
 	transition: 0.9s;
 }
 
-.nav-item:hover::after {
+.navbar .nav-item:hover::after {
 	width: 40%;
 }
 
 .navbar .btn {
-	padding: 15px 45px;
-	margin: 10px;
-	border-radius: 10px;
+	padding: 15px 47px;
 	font-size: 12px;
 	font-weight: bold;
-	-webkit-border-radius: 10px;
-	-moz-border-radius: 10px;
-	-ms-border-radius: 10px;
-	-o-border-radius: 10px;
+	-webkit-border-radius: 13px;
+	-moz-border-radius: 13px;
+	-ms-border-radius: 13px;
+	-o-border-radius: 13px;
+}
+
+/* sideMenu styles */
+
+.navbar .menu-btn {
+	display: none;
+	padding: 10px;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-ms-border-radius: 5px;
+	-o-border-radius: 5px;
+}
+
+.navbar .menu-btn span {
+	width: 25px;
+	height: 2px;
+	background-color: #000000;
+	margin: 2px;
+	border-radius: 25px;
+	-webkit-border-radius: 25px;
+	-moz-border-radius: 25px;
+	-ms-border-radius: 25px;
+	-o-border-radius: 25px;
+}
+
+.side-menu {
+	width: 300px;
+	height: 100vh;
+	position: absolute;
+	top: 0;
+	right: -100%;
+	background-color: #3f3f3f;
+	transition: right 1s;
+	z-index: 2;
+	-webkit-transition: right 1s;
+	-moz-transition: right 1s;
+	-ms-transition: right 1s;
+	-o-transition: right 1s;
+}
+
+.side-menu.active {
+	right: 0;
+}
+
+.side-menu ul a {
+	color: #ffffff8a;
+}
+
+.side-menu ul a:hover {
+	color: #fffffff3;
+}
+
+.side-menu .nav-link {
+	padding: 15px;
+}
+
+.side-menu .nav-item {
+	border-bottom: 1px solid #2222223b;
+	transition: background 0.9s;
+	-webkit-transition: background 0.9s;
+	-moz-transition: background 0.9s;
+	-ms-transition: background 0.9s;
+	-o-transition: background 0.9s;
+}
+
+.side-menu .nav-item:hover {
+	background-color: #2e2e2e;
+}
+
+.side-menu .nav-item::after {
+	content: "";
+	width: 0;
+	height: 3px;
+	background-color: #ff3547;
+	border-radius: 10px;
+	position: absolute;
+	bottom: 0;
+	right: 0px;
+	transition: 0.9s;
+}
+
+.side-menu .nav-item:hover::after {
+	width: 100%;
+}
+
+.side-menu .btn {
+	width: 90%;
+	margin: 80% 15px 0;
+	padding: 10px;
 }
