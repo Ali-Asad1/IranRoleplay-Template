@@ -8,6 +8,9 @@ body {
 }
 
 /* navBar Styles */
+.navbar {
+	z-index: 1;
+}
 
 .navbar a {
 	color: #3f3f3fa1;
@@ -32,10 +35,6 @@ body {
 	border-radius: 12px;
 	overflow: hidden;
 	box-shadow: 0 0 10px #ed1b36;
-	-webkit-border-radius: 12px;
-	-moz-border-radius: 12px;
-	-ms-border-radius: 12px;
-	-o-border-radius: 12px;
 }
 
 .navbar .icon img,
@@ -75,10 +74,6 @@ body {
 	padding: 15px 47px;
 	font-size: 12px;
 	font-weight: bold;
-	-webkit-border-radius: 13px;
-	-moz-border-radius: 13px;
-	-ms-border-radius: 13px;
-	-o-border-radius: 13px;
 }
 
 /* sideMenu styles */
@@ -108,7 +103,7 @@ body {
 .side-menu {
 	width: 300px;
 	height: 100vh;
-	position: absolute;
+	position: fixed;
 	top: 0;
 	right: -100%;
 	background-color: #3f3f3f;
@@ -167,6 +162,6 @@ body {
 
 .side-menu .btn {
 	width: 90%;
-	margin: 80% 15px 0;
+	margin: 60% 15px 0;
 	padding: 10px;
 }
