@@ -198,11 +198,12 @@ body {
 /* Page header style */
 
 header {
+	position: relative;
 	z-index: -1;
 }
 
 .page-header {
-    background: radial-gradient(circle, #ff3547, #be1919);
+	background: radial-gradient(circle, #ff3547, #be1919);
 	/* padding-top: 5rem; */
 }
 
@@ -216,4 +217,55 @@ header {
 	align-items: center;
 	padding: 13px 16px;
 	text-decoration: none;
+}
+
+/* Wave */
+
+.waves {
+	position: relative;
+	width: 100%;
+	height: 15vh;
+	margin-top: -7px;
+	min-height: 100px;
+	max-height: 150px;
+}
+
+.parallax > use:nth-child(1) {
+	animation-delay: -2s;
+	animation-duration: 16s;
+}
+
+.parallax > use {
+	animation: move-forever 25s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite;
+	-webkit-animation: move-forever 25s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite;
+}
+
+@keyframes move-forever {
+	0% {
+		transform: translate3d(-90px, 0, 0);
+		-webkit-transform: translate3d(-90px, 0, 0);
+		-moz-transform: translate3d(-90px, 0, 0);
+		-ms-transform: translate3d(-90px, 0, 0);
+		-o-transform: translate3d(-90px, 0, 0);
+	}
+
+	100% {
+		transform: translate3d(85px, 0, 0);
+		-webkit-transform: translate3d(85px, 0, 0);
+		-moz-transform: translate3d(85px, 0, 0);
+		-ms-transform: translate3d(85px, 0, 0);
+		-o-transform: translate3d(85px, 0, 0);
+	}
+}
+
+/* Card styles */
+
+.card {
+	height: 100%;
+	padding: 10px;
+	border-radius: 15px;
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	-ms-border-radius: 15px;
+	-o-border-radius: 15px;
 }
