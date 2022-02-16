@@ -74,6 +74,11 @@ body {
 	padding: 15px 47px;
 	font-size: 12px;
 	font-weight: bold;
+	border-radius: 0.75rem;
+	-webkit-border-radius: 0.75rem;
+	-moz-border-radius: 0.75rem;
+	-ms-border-radius: 0.75rem;
+	-o-border-radius: 0.75rem;
 }
 
 /* sideMenu styles */
@@ -107,16 +112,18 @@ body {
 	top: 0;
 	right: -100%;
 	background-color: #3f3f3f;
-	transition: right 1s;
-	z-index: 2;
-	-webkit-transition: right 1s;
-	-moz-transition: right 1s;
-	-ms-transition: right 1s;
-	-o-transition: right 1s;
+	transition: all 1s;
+	z-index: 101;
+	-webkit-transition: all 1s;
+	-moz-transition: all 1s;
+	-ms-transition: all 1s;
+	-o-transition: all 1s;
+	visibility: hidden;
 }
 
 .side-menu.active {
 	right: 0;
+	visibility: visible;
 }
 
 .side-menu ul a {
@@ -164,4 +171,26 @@ body {
 	width: 90%;
 	margin: 60% 15px 0;
 	padding: 10px;
+}
+
+.side-menu-overlay {
+	position: fixed;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	background-color: #0000004d;
+	opacity: 0;
+	transition: all 1s;
+	z-index: 100;
+	-webkit-transition: all 1s;
+	-moz-transition: all 1s;
+	-ms-transition: all 1s;
+	-o-transition: all 1s;
+	visibility: hidden;
+}
+
+.side-menu-overlay.active {
+	visibility: visible;
+	opacity: 1;
 }
