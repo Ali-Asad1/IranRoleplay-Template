@@ -9,7 +9,7 @@ body {
 
 /* navBar Styles */
 .navbar {
-	z-index: 1;
+	z-index: 899;
 }
 
 .navbar a {
@@ -113,7 +113,7 @@ body {
 	right: -100%;
 	background-color: #3f3f3f;
 	transition: all 1s;
-	z-index: 101;
+	z-index: 901;
 	-webkit-transition: all 1s;
 	-moz-transition: all 1s;
 	-ms-transition: all 1s;
@@ -182,7 +182,7 @@ body {
 	background-color: #0000004d;
 	opacity: 0;
 	transition: all 1s;
-	z-index: 100;
+	z-index: 900;
 	-webkit-transition: all 1s;
 	-moz-transition: all 1s;
 	-ms-transition: all 1s;
@@ -193,4 +193,27 @@ body {
 .side-menu-overlay.active {
 	visibility: visible;
 	opacity: 1;
+}
+
+/* Page header style */
+
+header {
+	z-index: -1;
+}
+
+.page-header {
+    background: radial-gradient(circle, #ff3547, #be1919);
+	/* padding-top: 5rem; */
+}
+
+.page-header-content img {
+	max-width: 100%;
+}
+
+.play-btn {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 13px 16px;
+	text-decoration: none;
 }
