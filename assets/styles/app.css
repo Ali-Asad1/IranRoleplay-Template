@@ -179,8 +179,9 @@ body {
 	right: 0;
 	left: 0;
 	bottom: 0;
-	background-color: #0000004d;
+	background-color: #ffffff10;
 	opacity: 0;
+	backdrop-filter: blur(0);
 	transition: all 1s;
 	z-index: 900;
 	-webkit-transition: all 1s;
@@ -193,6 +194,7 @@ body {
 .side-menu-overlay.active {
 	visibility: visible;
 	opacity: 1;
+	backdrop-filter: blur(3px);
 }
 
 /* Page header style */
@@ -230,9 +232,21 @@ header {
 	max-height: 150px;
 }
 
-.parallax > use:nth-child(1) {
+.parallax >use:nth-child(1) {
 	animation-delay: -2s;
 	animation-duration: 16s;
+}
+.parallax >use:nth-child(2) {
+	animation-delay: -3s;
+	animation-duration: 10s;
+}
+.parallax >use:nth-child(3) {
+	animation-delay: -4s;
+	animation-duration: 13s;
+}
+.parallax >use:nth-child(4) {
+	animation-delay: -5s;
+	animation-duration: 20s;
 }
 
 .parallax > use {
@@ -262,10 +276,66 @@ header {
 
 .card {
 	height: 100%;
-	padding: 10px;
+	/* padding: 10px; */
 	border-radius: 15px;
 	-webkit-border-radius: 15px;
 	-moz-border-radius: 15px;
 	-ms-border-radius: 15px;
 	-o-border-radius: 15px;
+}
+
+
+/* dsicord message style */
+
+.card.dis-message {
+	display: flex;
+	justify-content: center;
+	/* align-items: flex-end; */
+}
+
+.dis-message img  {
+	width: 48px;
+	height: 48px;
+	object-fit: cover;
+	border-radius: 50%;
+}
+
+.dis-message .tag {
+	text-align: center;
+	font-size: 14px;
+	padding: 3px 10px;
+	background-color: gold;
+	border-radius: 10px;
+}
+
+
+/* footer */
+
+.footer-content {
+	background-color: #212529 ;
+	border-radius: 35px 35px 0 0;
+}
+
+
+/* ScrollBar styles */
+
+::-webkit-scrollbar {
+	width: 7px;
+}
+
+::-webkit-scrollbar-track {
+	background: #ccc;
+	border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+	background-color: #797979;
+	border-radius: 10px;
+}
+
+/* Selection style */
+
+::selection {
+	background-color: #ff3547;
+	color: #fff;
 }
