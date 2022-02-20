@@ -9,6 +9,7 @@ body {
 
 /* navBar Styles */
 .navbar {
+	background: #f8f9fa;
 	z-index: 899;
 }
 
@@ -249,18 +250,22 @@ header {
 }
 
 .parallax > use:nth-child(1) {
+	fill: rgba(255, 255, 255, 0.7);
 	animation-delay: -2s;
 	animation-duration: 16s;
 }
 .parallax > use:nth-child(2) {
+	fill: rgba(255, 255, 255, 0.5);
 	animation-delay: -3s;
 	animation-duration: 10s;
 }
 .parallax > use:nth-child(3) {
+	fill: rgba(255, 255, 255, 0.3);
 	animation-delay: -4s;
 	animation-duration: 13s;
 }
 .parallax > use:nth-child(4) {
+	fill: #fff;
 	animation-delay: -5s;
 	animation-duration: 20s;
 }
@@ -294,6 +299,7 @@ header {
 	height: 100%;
 	/* padding: 10px; */
 	border-radius: 15px;
+	box-shadow: 0 0.3rem 1rem rgba(0, 0, 0, 0.5);
 	-webkit-border-radius: 15px;
 	-moz-border-radius: 15px;
 	-ms-border-radius: 15px;
