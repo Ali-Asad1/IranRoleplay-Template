@@ -1,3 +1,7 @@
+body.dark h3 {
+    color: #ffffff;
+}
+
 /* NavBar Dark style */
 
 body.dark nav {
@@ -5,17 +9,22 @@ body.dark nav {
 }
 
 body.dark .navbar ul a:hover {
-	color: #d8d8d8;
+	color: #ffffff8a;
 }
 
-body.dark nav button,
+body.dark nav .btn,
 body.dark .side-menu button {
 	background: #ed1b36;
+	box-shadow: 0px 5px 20px #ed1b36;
 	border: none;
 }
 
 body.dark nav ul a {
 	color: #ffffff;
+}
+
+body.dark .side-menu {
+    background-color: #4f4f4f;
 }
 
 body.dark nav .menu-btn {
