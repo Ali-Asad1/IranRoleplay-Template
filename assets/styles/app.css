@@ -18,6 +18,10 @@ body {
 	font-size: 16px;
 }
 
+.navbar a:focus {
+	color: #ed1b36;
+}
+
 .navbar .wrapper {
 	display: flex;
 	justify-content: space-between;
