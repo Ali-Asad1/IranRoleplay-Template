@@ -5,6 +5,7 @@ const sideMenu = $.querySelector('.side-menu');
 const sideMenuOverlay = $.querySelector('.side-menu-overlay');
 const closeBtn = $.querySelector('.close-button');
 const darkModeBtn = $.querySelector('.dark-icon');
+const progressBar = $.querySelector('.progress-bar');
 
 function sideMenuOpening() {
     sideMenu.classList.add('active');
@@ -21,6 +22,13 @@ function darkMode() {
     $.body.classList.toggle('dark');
 }
 
+window.onscroll = function headerProgressBar() {
+    let scroll = document.documentElement.scrollTop;
+    let height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    let scrolled = (scroll / height) * 100;
+    progressBar.style.width = scrolled + "%";
+    console.log(scroll);
+}
 
 menuBtn.addEventListener('click', sideMenuOpening);
 sideMenuOverlay.addEventListener('click', sideMenuClosing);
